@@ -1,0 +1,301 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'sans';
+    src: url('../fonts/DM_Sans/static/DMSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'sans';
+    src: url('../fonts/DM_Sans/static/DMSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'sans';
+    src: url('../fonts/DM_Sans/static/DMSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'sans';
+    src: url('../fonts/DM_Sans/static/DMSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'sans';
+    src: url('../fonts/DM_Sans/static/DMSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  :root{
+    --sans-font:'sans';
+    --heading1-size:35px;
+    --heading2-size:28px;
+    --yellow-color:#f5b754;
+    --para-color:#555;
+  }
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family:var(--sans-font) ;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #fcfcfc;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'sans';
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+} */
+.section-heading{
+  font-size: var(--heading1-size);
+  font-family: 'sans';
+  font-weight: 600;
+}
+p{
+  font-size: 16px;
+  color: var(--para-color);
+  font-family: 'sans';
+  font-weight: 400;
+}
+.navbar {
+  height: 60px;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-elements {
+    margin: auto;
+}
+
+.nav-elements ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+  margin-right: 60px;
+}
+
+.nav-elements ul a {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'sans';
+}
+
+.nav-elements ul a.active {
+  color: #000;
+  position: relative;
+}
+
+/* .nav-elements ul a.active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #574c4c;
+} */
+
+/* ===========home page=============================== */
+.hero-section{
+  position: relative;
+}
+.hero-section h1{
+font-family: 'sans';
+font-weight: 700;
+font-size: 65px;
+line-height: 1.15;
+position: relative;
+}
+.hero-section h1 span::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 150px;
+  background: var(--yellow-color);
+  left: 0;
+  top: 65px;
+}
+.after-line{
+  position: relative;
+}
+.after-line::after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 120px;
+  background: var(--yellow-color);
+  left: 0;
+  top: 40px;
+}
+section{
+  margin: 50px 0;
+}
+.car-img {
+  position: relative;
+  overflow: hidden;
+  transition: all .4s ease;
+  height: 270px;
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.car-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.car-img::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(220deg, rgba(249, 192, 119, 0) 0.73%, rgba(4, 4, 1, 0.3) 90.71%);
+  z-index: 1;
+}
+.hero-section {
+  padding-right: 30px;
+}
+.hero-section p {
+  font-size: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+  font-family: 'sans';
+  color: #555;
+}
+.slider-container {
+  margin: 30px auto;
+}
+.service-card {
+  position: relative;
+  padding: 10px 15px;
+  border: 1px solid #cccccc70;
+  margin-right: 20px;
+  border-radius: 10px;
+  transition: all .4s ease;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000;
+  border-radius: 500px 500px 0 0;
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  opacity: 0;
+  z-index: -1;
+}
+.service-card:hover::before {
+  top: 0;
+  border-radius: 0;
+  opacity: 1;
+}
+.service-card:hover{
+  color: #fff;
+}
+.service-card:hover span{
+  color: #fff;
+}
+.service-card .card-img img {
+  max-width: 180px;
+  height: 100px;
+  object-fit: contain;
+  margin: auto;
+}
+.car-type {
+  font-size: 14px;
+  font-family: 'sans';
+  font-weight: 600;
+  background-color: var(--yellow-color);
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 12px;
+  border-radius: 18px;
+  color: #fff;
+}
+.service-card h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.seats {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.seats span{
+  color: var(--para-color);
+  font-size: 14px;
+}
+.price-tag{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.price-tag span{
+  font-size: 12px;
+  color: var(--para-color);
+}
+.arrow-btn {
+  background: var(--yellow-color);
+  border: none;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-arrow {
+  transform: rotate(225deg);
+}
+.right-arrow{
+  transform: rotate(45deg);
+}
