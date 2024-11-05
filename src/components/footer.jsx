@@ -45,7 +45,7 @@ const Footer = () => {
                     <Row className="mt-5">
                         <Col md={4}>
                             <div>
-                                <img src="images/logo.png" style={{ height: "80px", width: "80px" }} />
+                                <img src="images/logo.jpg" style={{ height: "80px", width: "80px" }} />
                                 <p className="mt-3 text-white">
                                     Experience the ease and convenience of renting a car with Novaride.
                                 </p>

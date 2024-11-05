@@ -50,7 +50,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-           <img src="images/logo.png" className="logo"/>
+           <img src="images/logo.jpg" className="logo"/>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
