@@ -299,3 +299,133 @@ section{
 .right-arrow{
   transform: rotate(45deg);
 }
+.h-section-img img{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+footer{
+  background: #1b1b1b;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+.footer-step1 {
+  color: #fff;
+  font-family: "sans";
+  font-weight: 500;
+  border-bottom: 1px solid #cccccc61;
+  justify-content: center;
+}
+.footer-icon{
+  background-color: var(--yellow-color);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.footer-icon img{
+height: 20px;
+width: 20px;
+}
+.footer-step1 h3 {
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+.footer-step1 span {
+  font-size: 15px;
+}
+.social-icon{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.social-icon .icon-img{
+  padding: 5px;
+ border: 1px solid var(--yellow-color);
+ height: 40px;
+ width: 40px;
+ border-radius: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ cursor: pointer;
+ transition: ease-in-out;
+}
+.social-icon .icon-img:hover{
+  background-color: var(--yellow-color);
+}
+.social-icon .icon-img:hover img{
+  filter: brightness(0);
+}
+.icon-img img{
+  filter: brightness(1)invert(1);
+  height: 20px;
+  width: 20px;
+}
+.social-icon .icon-img:hover img{
+  filter: brightness(0);
+}
+.footer-step2 h3 {
+  color: #fff;
+  font-size: 20px;
+}
+.footer-step2 ul {
+  padding: 0;
+}
+.footer-step2 ul li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 7px;
+  width: 7px;
+  border-radius: 50px;
+  background: var(--yellow-color);
+  top: 10px;
+}
+.footer-step2 ul li  {
+  margin-bottom: 5px;
+  list-style: none;
+  position: relative;
+}
+.footer-step2 ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 15px;
+
+}
+.footer-step2 p{
+  font-size: 14px;
+  color: #ffffffbb;
+}
+.footer-step2 input {
+  background: transparent;
+  border: 1px solid #cccccc40;
+  padding: 12px;
+  border-radius: 30px;
+  width: 100%;
+  color: #fff;
+}
+
+.footer-step2 input::placeholder{
+  font-size: 14px;
+}
+.subscribe-mail {
+  position: relative;
+}
+.subscribe-mail button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  background: var(--yellow-color);
+  /* margin: 5px; */
+}
+.subscribe-mail img{
+  max-width: 15px;
+}

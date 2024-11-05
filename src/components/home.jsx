@@ -4,6 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Footer from "./footer";
 
 
 const settings = {
@@ -74,15 +75,15 @@ const Home = () => {
                                     <div className="hero-img d-flex gap-4 align-items-center justify-content-center">
                                         <div>
                                             <div className="car-img">
-                                                <img src="images/car1.jpg" />
+                                                <img src="images/car1.jpg" alt="car1"/>
                                             </div>
                                             <div className="car-img">
-                                                <img src="images/car3.jpg" />
+                                                <img src="images/car3.jpg" alt="car2"/>
                                             </div>
                                         </div>
                                         <div>
                                             <div className="car-img">
-                                                <img src="images/car2.jpg" />
+                                                <img src="images/car2.jpg" alt="car3"/>
                                             </div>
                                         </div>
                                     </div>
@@ -231,9 +232,15 @@ const Home = () => {
                                 </p>
                             </div>
                         </Col>
+                        <Col md={6}>
+                        <div className="h-section-img ps-md-4">
+                            <img src="images/traveral.png" alt="vehical" />
+                        </div>
+                            </Col>
                     </Row>
                 </Container>
             </section>
+            <Footer/>
         </>
     )
 }
