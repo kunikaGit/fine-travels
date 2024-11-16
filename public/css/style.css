@@ -429,3 +429,49 @@ width: 20px;
 .subscribe-mail img{
   max-width: 15px;
 }
+
+.package-info{
+  border: 1px solid var(--yellow-color);
+  border-radius: 10px;
+}
+.package-info .package-img img {
+  height: 310px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.package-info h3 {
+  font-size: 20px;
+  font-family: 'sans';
+  font-weight: 600;
+}
+.package-info span {
+  font-family: 'sans';
+  font-weight: 700;
+  font-size: 18px;
+
+}
+.view-link {
+  float: right;
+  font-size: 20px;
+  margin-top: 18px;
+  color: #333;
+}
+.photos img{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.whatsapp{
+  position: fixed;
+  right: 10px;
+  top: 100px;
+  z-index: 1;
+}
+.whatsapp img{
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 10px 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 6px 8px #cccccc5e;
+}

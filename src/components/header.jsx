@@ -70,6 +70,9 @@ const Navbar = () => {
                 <NavLink to="/">Cars</NavLink>
               </li>
               <li>
+                <NavLink to="/">Packages</NavLink>
+              </li>
+              <li>
                 <NavLink to="/">Contact Us</NavLink>
               </li>
             </ul>

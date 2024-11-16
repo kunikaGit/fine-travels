@@ -15,7 +15,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h3>Call Us</h3>
-                                    <span>9999977770</span>
+                                    <span>+91-9301612334</span>
                                 </div>
                             </div>
                         </Col>
@@ -26,7 +26,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h3>Email</h3>
-                                    <span>example@gmail.com</span>
+                                    <span>sheikhnoushad1@gmail.com</span>
                                 </div>
                             </div>
                         </Col>
@@ -37,7 +37,7 @@ const Footer = () => {
                                 </div>
                                 <div>
                                     <h3>Location</h3>
-                                    <span>455 Vijay nagar, Indore</span>
+                                    <span>Chhoti Gwaltoli Patel Statue, Sattion Road Indore (M.P)</span>
                                 </div>
                             </div>
                         </Col>

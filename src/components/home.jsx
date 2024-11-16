@@ -5,6 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
 
 const settings = {
@@ -44,6 +45,17 @@ const settings = {
         }
     ]
 };
+
+const photos = [
+    { img: "images/car1.jpeg" },
+    { img: "images/car2.jpeg" },
+    { img: "images/car3.jpeg" },
+    { img: "images/car4.jpeg" },
+    { img: "images/car5.jpeg" },
+    { img: "images/car7.jpeg" },
+    { img: "images/car8.jpeg" },
+    { img: "images/car9.jpeg" },
+]
 const Home = () => {
     let sliderRef = useRef(null);
     const next = () => {
@@ -56,6 +68,9 @@ const Home = () => {
         <>
             <Navbar />
             <section>
+                <a href="https://wa.me/9753204929?text=Welcome to Fine Travels"target="_blank" className="whatsapp">
+                    <img src="images/whatsapp2.png" />
+                </a>
                 <div className="home-page">
                     <Container>
                         <Row >
@@ -75,15 +90,15 @@ const Home = () => {
                                     <div className="hero-img d-flex gap-4 align-items-center justify-content-center">
                                         <div>
                                             <div className="car-img">
-                                                <img src="images/car1.jpg" alt="car1"/>
+                                                <img src="images/car1.jpeg" alt="car1" />
                                             </div>
                                             <div className="car-img">
-                                                <img src="images/car3.jpg" alt="car2"/>
+                                                <img src="images/car4.jpeg" alt="car2" />
                                             </div>
                                         </div>
                                         <div>
                                             <div className="car-img">
-                                                <img src="images/car2.jpg" alt="car3"/>
+                                                <img src="images/car2.jpeg" alt="car3" />
                                             </div>
                                         </div>
                                     </div>
@@ -95,6 +110,7 @@ const Home = () => {
                 </div>
             </section>
             <section>
+
                 <Container>
                     <h2 className="section-heading mb-4 after-line">Explore Our Fleet</h2>
                     <Row>
@@ -112,7 +128,7 @@ const Home = () => {
                                             <img src="images/vehicle1.png" alt="car" />
                                         </div>
                                         <h3 className="car-type">SUV</h3>
-                                        <h4>Harrier Wagon</h4>
+                                        <h4>Innova crysta </h4>
                                         <div className="seats">
                                             <span>Passangers/Seats</span>
                                             <span>2</span>
@@ -132,7 +148,7 @@ const Home = () => {
                                             <img src="images/vehicle2.png" alt="car" />
                                         </div>
                                         <h3 className="car-type">SUV</h3>
-                                        <h4>Harrier Wagon</h4>
+                                        <h4>Ertiga</h4>
                                         <div className="seats">
                                             <span>Doors</span>
                                             <span>2</span>
@@ -212,8 +228,8 @@ const Home = () => {
                     <div>
                         <div className="home-slider">
                             <div className="d-flex align-items-center justify-content-center slider-arrows">
-                                <button onClick={previous} className="arrow-btn"><img src="images/arrow-left.svg" className="left-arrow"/></button>
-                                <button onClick={next} className="arrow-btn"><img src="images/arrow-right.svg" className="right-arrow"/></button>
+                                <button onClick={previous} className="arrow-btn"><img src="images/arrow-left.svg" className="left-arrow" /></button>
+                                <button onClick={next} className="arrow-btn"><img src="images/arrow-right.svg" className="right-arrow" /></button>
                             </div>
                         </div>
                     </div>
@@ -233,14 +249,81 @@ const Home = () => {
                             </div>
                         </Col>
                         <Col md={6}>
-                        <div className="h-section-img ps-md-4">
-                            <img src="images/traveral.png" alt="vehical" />
-                        </div>
-                            </Col>
+                            <div className="h-section-img ps-md-4">
+                                <img src="images/trav1.jpeg" alt="vehical" />
+                            </div>
+                        </Col>
                     </Row>
                 </Container>
             </section>
-            <Footer/>
+            <section>
+                <Container>
+                    <h2 className="section-heading mb-4 after-line">Our Packages
+                        <Link to="" className="view-link">View All</Link>
+                    </h2>
+                    <Row>
+                        <Col md={3}>
+                            <div className="package-info">
+                                <div className="package-img">
+                                    <img src="images/ujjain.png" alt="ujjain" />
+                                </div>
+                                <div className="px-2 py-3" >
+                                    <h3>Indore to Ujjain </h3>
+                                    <span>Price - 15000/-</span>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="package-info">
+                                <div className="package-img">
+                                    <img src="images/om.png" alt="ujjain" />
+                                </div>
+                                <div className="px-2 py-3" >
+                                    <h3>Indore to Omkareshwar </h3>
+                                    <span>Price - 15000/-</span>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="package-info">
+                                <div className="package-img">
+                                    <img src="images/maheshwar.jpg" alt="ujjain" />
+                                </div>
+                                <div className="px-2 py-3" >
+                                    <h3>Indore to Maheshwar </h3>
+                                    <span>Price - 15000/-</span>
+                                </div>
+                            </div>
+                        </Col>
+                        <Col md={3}>
+                            <div className="package-info">
+                                <div className="package-img">
+                                    <img src="images/mandu.jpg" alt="ujjain" />
+                                </div>
+                                <div className="px-2 py-3" >
+                                    <h3>Indore to Mandu </h3>
+                                    <span>Price - 15000/-</span>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+            <section>
+                <Container>
+                    <h2 className="section-heading mb-5 after-line">Our Photos </h2>
+                    <Row>
+                        {photos.map((item) => (
+                            <Col sm={3} className="mb-3">
+                                <div className="photos">
+                                    <img src={item.img} className="rounded-3" />
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
+            </section>
+            <Footer />
         </>
     )
 }
