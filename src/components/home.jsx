@@ -68,10 +68,13 @@ const Home = () => {
         <>
             <Navbar />
             <section>
-                <a href="https://wa.me/9301612334?text=Hello, I am interested in your travel packages. Could you share details about the available options?
-"target="_blank" className="whatsapp">
-                    <img src="images/whatsapp2.png" />
-                </a>
+            <a 
+   href="https://wa.me/919301612334?text=Hello%2C%20I%20am%20interested%20in%20your%20travel%20packages.%20Could%20you%20share%20details%20about%20the%20available%20options%3F" 
+   target="_blank" 
+   className="whatsapp">
+   <img src="images/whatsapp2.png" alt="WhatsApp" />
+</a>
+
                 <div className="home-page">
                     <Container>
                         <Row >
