@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
+import config from "../config/config";
 const Footer = () => {
     return (
         <>
@@ -22,7 +22,7 @@ const Footer = () => {
                         <Col md={4}>
                             <div className="d-flex align-items-center footer-step1">
                                 <div className="footer-icon">
-                                    <img src="images/email.svg" alt="phone" />
+                                    <img src="images/email.svg" alt="email" />
                                 </div>
                                 <div>
                                     <h3>Email</h3>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <Col md={4}>
                             <div className="d-flex  align-items-center footer-step1">
                                 <div className="footer-icon">
-                                    <img src="images/location.svg" alt="phone" />
+                                    <img src="images/location.svg" alt="location" />
                                 </div>
                                 <div>
                                     <h3>Location</h3>
@@ -45,15 +45,15 @@ const Footer = () => {
                     <Row className="mt-5">
                         <Col md={4}>
                             <div>
-                                <img src="images/logo.jpg" style={{ height: "80px", width: "80px" }} />
+                                <img src="images/logo.jpg" style={{ height: "80px", width: "80px" }} alt="logo"/>
                                 <p className="mt-3 text-white">
                                     Experience the ease and convenience of renting a car with Novaride.
                                 </p>
                             </div>
                             <div className="social-icon">
                                 <div className="icon-img"><img src="images/whatsapp.png" alt="whatsapp"/></div>
-                                <div className="icon-img"><img src="images/facebook.png" alt="whatsapp"/></div>
-                                <div className="icon-img"><img src="images/instagram.png" alt="whatsapp"/></div>
+                                <div className="icon-img"><img src="images/facebook.png" alt="facebook"/></div>
+                                <div className="icon-img"><img src="images/instagram.png" alt="instagram"/></div>
                             </div>
                         </Col>
                          <Col md={4}>
@@ -61,10 +61,10 @@ const Footer = () => {
                          <div className="footer-step2 ">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li><Link to="">About</Link></li>
-                                <li><Link to="">Cars</Link></li>
-                                <li><Link to="">Contact</Link></li>
-                                <li><Link to="">Service</Link></li>
+                                <li><Link to={`${config.baseUrl}aboutus`}>About</Link></li>
+                                <li><Link to={`${config.baseUrl}services`}>Service</Link></li>
+                                <li><Link to={`${config.baseUrl}packages`}>Packages</Link></li>
+                                <li><Link to={`${config.baseUrl}contactus`}>Contact</Link></li>
                             </ul>
                          </div>
                          </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                            <div className="subscribe-mail">
                            <input placeholder="Email Address"/>
                            <button type="button">
-                            <img src="images/arrow.png"/>
+                            <img src="images/arrow.png" alt="arrow"/>
                            </button>
                            </div>
                          </div>

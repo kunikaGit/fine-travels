@@ -11,28 +11,48 @@
 } */
 
 @media (max-width: 768px) {
-    .nav-elements ul li:not(:last-child) {
-      margin-right: 30px;
-    }
-    .car-img{
-      width: 100%;
-    }
-    .hero-section h1 {
-      font-size: 40px;
-    }
-    .hero-section h1 span::after {
-      top: 42px;
+  .h-section-img .half-section-image {
+    height: 300px;
   }
-  .hero-section{
+
+  .page-heading {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .car-img {
+    height: 180px;
+    width: 165px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+
+
+  .hero-section h1 {
+    font-size: 40px;
+  }
+
+  .hero-section h1 span::after {
+    top: 42px;
+  }
+
+  .hero-section {
     padding: 0;
   }
+
   .footer-step1 {
     justify-content: start;
   }
-  .footer-step2 ul li{
+
+  .footer-step2 ul li {
     display: inline;
     margin: 10px;
   }
+
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -65,9 +85,42 @@
     margin-top: 22px;
   }
 
+}
+
+@media (max-width: 425px) {
+  .sub-heading {
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+
+  .service-img50 img {
+    height: auto;
+    width: 48%;
+    object-fit: cover;
+    margin: 2px;
+    border-radius: 10px;
+}
+  .logo {
+    height: 60px;
+    width: 60px;
   }
-  
-  @media (max-width: 600px) {
-   
+
+  .section-heading {
+    font-size: 25px;
   }
-  
+
+  .after-line::after {
+    top: 32px;
+  }
+
+  .view-link {
+    float: right;
+    font-size: 15px;
+    margin-top: 0;
+  }
+  .whatsapp img {
+    height: 40px;
+    width: 40px;
+  }
+}

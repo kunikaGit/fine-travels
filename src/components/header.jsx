@@ -1,9 +1,12 @@
 
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import config from "../config/config";
+
 const Navbar = () => {
     const [showNavbar, setShowNavbar] = React.useState(false);
-  
+    const location = useLocation()
     const handleShowNavbar = () => {
       setShowNavbar(!showNavbar);
     };
@@ -50,7 +53,9 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="container">
           <div className="logo">
-           <img src="images/logo.jpg" className="logo"/>
+            <Link to={`${config.baseUrl}`}>
+           <img src="images/logo.jpg" className="logo" alt="logo"/>
+           </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
             <Hamburger />
@@ -58,22 +63,22 @@ const Navbar = () => {
           <div className={`nav-elements  ${showNavbar && "active"}`}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to={`${config.baseUrl}`} className={`${location.pathname ==='/'? "active":""}`}>Home</NavLink>
               </li>
               <li>
-                <NavLink to="/">About Us</NavLink>
+                <NavLink to={`${config.baseUrl}aboutus`} className={`${location.pathname ==='aboutus'? "active":""}`}>About Us</NavLink>
               </li>
               <li>
-                <NavLink to="/">Sevices</NavLink>
+                <NavLink to={`${config.baseUrl}services`} className={`${location.pathname ==='services'? "active":""}`}>Sevices</NavLink>
+              </li>
+              {/* <li>
+                <NavLink to={`${config.baseUrl}cars`} className={`${location.pathname ==='cars'? "active":""}`}>Cars</NavLink>
+              </li> */}
+              <li>
+                <NavLink to={`${config.baseUrl}packages`} className={`${location.pathname ==='packages'? "active":""}`}>Packages</NavLink>
               </li>
               <li>
-                <NavLink to="/">Cars</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Packages</NavLink>
-              </li>
-              <li>
-                <NavLink to="/">Contact Us</NavLink>
+                <NavLink to={`${config.baseUrl}contactus`} className={`${location.pathname ==='contactus'? "active":""}`}>Contact Us</NavLink>
               </li>
             </ul>
           </div>

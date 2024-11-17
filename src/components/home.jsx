@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Footer from "./footer";
 import { Link } from "react-router-dom";
+import Whatsapp from "./whatsapp";
+import config from "../config/config";
 
 
 const settings = {
@@ -45,7 +47,28 @@ const settings = {
         }
     ]
 };
-
+const packages = [
+    {
+        img:"images/ujjain.png",
+        location:"Indore to Ujjain",
+        price:"Price - 15000/-"
+    },
+    {
+        img:"images/om.png",
+        location:"Indore to Omkareshwar",
+        price:"Price - 15000/-"
+    },
+    {
+        img:"images/maheshwar.jpg",
+        location:"Indore to Maheshwar",
+        price:"Price - 15000/-"
+    },
+    {
+        img:"images/mandu.jpg",
+        location:"Indore to Mandu",
+        price:"Price - 15000/-"
+    }
+]
 const photos = [
     { img: "images/car1.jpeg" },
     { img: "images/car2.jpeg" },
@@ -68,13 +91,7 @@ const Home = () => {
         <>
             <Navbar />
             <section>
-            <a 
-   href="https://wa.me/919301612334?text=Hello%2C%20I%20am%20interested%20in%20your%20travel%20packages.%20Could%20you%20share%20details%20about%20the%20available%20options%3F" 
-   target="_blank" 
-   className="whatsapp">
-   <img src="images/whatsapp2.png" alt="WhatsApp" />
-</a>
-
+                <Whatsapp/>
                 <div className="home-page">
                     <Container>
                         <Row >
@@ -91,7 +108,7 @@ const Home = () => {
                             </Col>
                             <Col lg={6}>
                                 <div className="right-section">
-                                    <div className="hero-img d-flex gap-4 align-items-center justify-content-center">
+                                    <div className="hero-img d-flex gap-md-4 gap-2 align-items-center justify-content-center">
                                         <div>
                                             <div className="car-img">
                                                 <img src="images/car1.jpeg" alt="car1" />
@@ -232,8 +249,8 @@ const Home = () => {
                     <div>
                         <div className="home-slider">
                             <div className="d-flex align-items-center justify-content-center slider-arrows">
-                                <button onClick={previous} className="arrow-btn"><img src="images/arrow-left.svg" className="left-arrow" /></button>
-                                <button onClick={next} className="arrow-btn"><img src="images/arrow-right.svg" className="right-arrow" /></button>
+                                <button onClick={previous} className="arrow-btn"><img src="images/arrow-left.svg" className="left-arrow" alt="arrow" /></button>
+                                <button onClick={next} className="arrow-btn"><img src="images/arrow-right.svg" className="right-arrow" alt="arrow" /></button>
                             </div>
                         </div>
                     </div>
@@ -263,53 +280,22 @@ const Home = () => {
             <section>
                 <Container>
                     <h2 className="section-heading mb-4 after-line">Our Packages
-                        <Link to="" className="view-link">View All</Link>
+                        <Link to={`${config.baseUrl}packages`} className="view-link">View All</Link>
                     </h2>
                     <Row>
-                        <Col md={3}>
+                    {packages.map((packes,index)=>(
+                        <Col md={3} key={index} className="mb-2">
                             <div className="package-info">
                                 <div className="package-img">
-                                    <img src="images/ujjain.png" alt="ujjain" />
+                                    <img src={packes.img} alt={packes.img} />
                                 </div>
                                 <div className="px-2 py-3" >
-                                    <h3>Indore to Ujjain </h3>
-                                    <span>Price - 15000/-</span>
+                                    <h3>{packes.location} </h3>
+                                    <span>{packes.price}</span>
                                 </div>
                             </div>
                         </Col>
-                        <Col md={3}>
-                            <div className="package-info">
-                                <div className="package-img">
-                                    <img src="images/om.png" alt="ujjain" />
-                                </div>
-                                <div className="px-2 py-3" >
-                                    <h3>Indore to Omkareshwar </h3>
-                                    <span>Price - 15000/-</span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={3}>
-                            <div className="package-info">
-                                <div className="package-img">
-                                    <img src="images/maheshwar.jpg" alt="ujjain" />
-                                </div>
-                                <div className="px-2 py-3" >
-                                    <h3>Indore to Maheshwar </h3>
-                                    <span>Price - 15000/-</span>
-                                </div>
-                            </div>
-                        </Col>
-                        <Col md={3}>
-                            <div className="package-info">
-                                <div className="package-img">
-                                    <img src="images/mandu.jpg" alt="ujjain" />
-                                </div>
-                                <div className="px-2 py-3" >
-                                    <h3>Indore to Mandu </h3>
-                                    <span>Price - 15000/-</span>
-                                </div>
-                            </div>
-                        </Col>
+                    ))}
                     </Row>
                 </Container>
             </section>
@@ -317,10 +303,10 @@ const Home = () => {
                 <Container>
                     <h2 className="section-heading mb-5 after-line">Our Photos </h2>
                     <Row>
-                        {photos.map((item) => (
-                            <Col sm={3} className="mb-3">
+                        {photos.map((item, index) => (
+                            <Col sm={3} className="mb-3" key={index}>
                                 <div className="photos">
-                                    <img src={item.img} className="rounded-3" />
+                                    <img src={item.img} className="rounded-3" alt="gallery" />
                                 </div>
                             </Col>
                         ))}
