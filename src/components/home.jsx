@@ -98,7 +98,7 @@ const Home = () => {
                             <Col lg={6} className="d-flex align-items-center">
                                 <div className="hero-section" data-overlay-dark="5">
                                     <h1>
-                                        <span>Fine Travels</span> <br/>Affordable Rentals, Exceptional Service!
+                                        <span>Fine Tours & Travels</span> <br/>Affordable Rentals, Exceptional Service!
                                     </h1>
                                     <p>
                                         Whether you’re planning a weekend getaway, a business trip, or just need a reliable ride for the day, we offers a wide range of vehicles to suit your needs.
