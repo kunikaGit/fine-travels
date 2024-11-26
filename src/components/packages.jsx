@@ -9,32 +9,27 @@ const packages = [
     {
         img:"images/ujjain.png",
         location:"Indore to Ujjain",
-        price:"Price - 15000/-"
+        price:"Price - 2750/- Only"
     },
     {
         img:"images/om.png",
         location:"Indore to Omkareshwar",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     },
     {
         img:"images/maheshwar.jpg",
         location:"Indore to Maheshwar",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     },
     {
         img:"images/mandu.jpg",
         location:"Indore to Mandu",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     },
     {
-        img:"images/om.png",
-        location:"Indore to Omkareshwar",
-        price:"Price - 15000/-"
-    },
-    {
-        img:"images/ujjain.png",
-        location:"Indore to Ujjain",
-        price:"Price - 15000/-"
+        img:"images/bhopal.png",
+        location:"Indore to Bopal",
+        price:"Price - 4000/- Only"
     },
 ]
 const Packages = () =>{

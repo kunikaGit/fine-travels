@@ -51,22 +51,22 @@ const packages = [
     {
         img:"images/ujjain.png",
         location:"Indore to Ujjain",
-        price:"Price - 15000/-"
+        price:"Price - 2750/- Only"
     },
     {
         img:"images/om.png",
         location:"Indore to Omkareshwar",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     },
     {
         img:"images/maheshwar.jpg",
         location:"Indore to Maheshwar",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     },
     {
         img:"images/mandu.jpg",
         location:"Indore to Mandu",
-        price:"Price - 15000/-"
+        price:"Price -  2750/- Only"
     }
 ]
 const photos = [
@@ -98,8 +98,7 @@ const Home = () => {
                             <Col lg={6} className="d-flex align-items-center">
                                 <div className="hero-section" data-overlay-dark="5">
                                     <h1>
-                                        <span>Looking</span> to save more on
-                                        your rental car?
+                                        <span>Fine Travels</span> <br/>Affordable Rentals, Exceptional Service!
                                     </h1>
                                     <p>
                                         Whether you’re planning a weekend getaway, a business trip, or just need a reliable ride for the day, we offers a wide range of vehicles to suit your needs.

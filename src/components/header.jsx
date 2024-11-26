@@ -55,6 +55,7 @@ const Navbar = () => {
           <div className="logo">
             <Link to={`${config.baseUrl}`}>
            <img src="images/logo.jpg" className="logo" alt="logo"/>
+           {/* <span>Fine Travels</span> */}
            </Link>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
